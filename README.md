@@ -1,0 +1,3 @@
+# Access Salesforce Page without Login
+
+This functionality will allow end-user to access Visualforce Page without Login into Salesforce. There might be a requirement where we need to expose some information for Customers / End Users like Ticket Number or any Id. Also, we take some inputs from the Customer like Feedback. In such cases, we can expose Visualforce Page publically to show some information or to get some input from the Customer.
