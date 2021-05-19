@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Course__c</fullName>
+    <externalId>false</externalId>
+    <label>Course</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Salesforce Admin Full Course</fullName>
+                <default>false</default>
+                <label>Salesforce Admin Full Course</label>
+            </value>
+            <value>
+                <fullName>Salesforce App Builder Full Course</fullName>
+                <default>false</default>
+                <label>Salesforce App Builder Full Course</label>
+            </value>
+            <value>
+                <fullName>Salesforce Advanced Admin Full Course</fullName>
+                <default>false</default>
+                <label>Salesforce Advanced Admin Full Course</label>
+            </value>
+            <value>
+                <fullName>Salesforce PD1 Full Course</fullName>
+                <default>false</default>
+                <label>Salesforce PD1 Full Course</label>
+            </value>
+            <value>
+                <fullName>Salesforce PD2 Full Course</fullName>
+                <default>false</default>
+                <label>Salesforce PD2 Full Course</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
