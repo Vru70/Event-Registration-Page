@@ -1,14 +1,27 @@
 <!--
   @author            : Vrushabh Uprikar
-  @last modified on  : 05-19-2021
+  @last modified on  : 05-20-2021
   @last modified by  : Vrushabh Uprikar
   Modifications Log 
   Ver   Date         Author             Modification
   1.0   05-19-2021   Vrushabh Uprikar   Initial Version
 -->
-<apex:page standardStylesheets="true" showHeader="false">
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Congratulations</h1>
-This is your new Page
-<!-- End Default Content REMOVE THIS -->
+<apex:page standardStylesheets="true" extends="ltng:outApp" showHeader="false">
+<apex:includeLightning />
+<div id="LightningAppDivId">
+    <!-- Lightning Web Component will be included here. -->
+</div>
+<script>
+    $Lightning.use(
+        "c:regiFromApp", // Name of Aura Dependency app where c is namespace.
+        function () 
+        { // Callback function
+            $Lightning.createComponent(
+                "c:timer", // Name of Lightning Web Component where c is namespace.
+                {}, // attribute parameters
+                "LightningAppDivId" // Id of the element where Lightning Component will be rendered.
+            );
+        }
+    );
+</script>
 </apex:page>
