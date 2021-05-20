@@ -6,7 +6,7 @@
   Ver   Date         Author             Modification
   1.0   05-19-2021   Vrushabh Uprikar   Initial Version
 -->
-<apex:page standardStylesheets="true" extends="ltng:outApp" showHeader="false">
+<apex:page standardStylesheets="true" showHeader="false">
 <apex:includeLightning />
 <div id="LightningAppDivId">
     <!-- Lightning Web Component will be included here. -->
