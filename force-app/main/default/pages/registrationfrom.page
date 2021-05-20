@@ -4,24 +4,20 @@
   @last modified by  : Vrushabh Uprikar
   Modifications Log 
   Ver   Date         Author             Modification
-  1.0   05-19-2021   Vrushabh Uprikar   Initial Version
+  1.0   05-20-2021   Vrushabh Uprikar   Initial Version
 -->
-<apex:page standardStylesheets="true" showHeader="false">
-<apex:includeLightning />
-<div id="LightningAppDivId">
-    <!-- Lightning Web Component will be included here. -->
-</div>
-<script>
-    $Lightning.use(
-        "c:regiFromApp", // Name of Aura Dependency app where c is namespace.
-        function () 
-        { // Callback function
-            $Lightning.createComponent(
-                "c:timer", // Name of Lightning Web Component where c is namespace.
-                {}, // attribute parameters
-                "LightningAppDivId" // Id of the element where Lightning Component will be rendered.
-            );
-        }
-    );
-</script>
+<apex:page showHeader="false" sidebar="false">
+    <apex:includeLightning />
+    <div id="LightningComponentid" />
+    <script>
+        $Lightning.use("c:regiFormApp", function () {
+            $Lightning.createComponent("c:abc",
+                {
+                },
+                "LightningComponentid",
+                function (cmp) {
+                    console.log('LWC Componenet added in VF page');
+                });
+        });
+    </script>
 </apex:page>
