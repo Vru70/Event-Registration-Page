@@ -1,3 +1,3 @@
-<aura:application extends="ltng:outApp" access="Global">
-    <aura:dependency resource="c:timer" />
+<aura:application extends="ltng:outApp" access="GLOBAL">
+    <aura:dependency resource="abc" />
 </aura:application>
